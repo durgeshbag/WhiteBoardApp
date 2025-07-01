@@ -30,6 +30,7 @@ function Board() {
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.ctrlKey && event.key === "z") {
+        console.log("Undo action triggered");
         undo();
       } else if (event.ctrlKey && event.key === "y") {
         redo();
